@@ -9,7 +9,10 @@ namespace Univercity.Controllers
     public class HomeController : Controller
     {
 
-
+        /// <summary>
+        ///  this is a text
+        /// </summary>
+        /// <returns></returns>
 
         // GET: Home
         public ActionResult Index()
