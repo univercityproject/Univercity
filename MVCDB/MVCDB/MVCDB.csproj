@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0EF01279-7A52-4C47-9882-A4E1DCFA1488}</ProjectGuid>
+    <ProjectGuid>{D19F69C6-09D0-4137-AE70-AE0FEBA40960}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Univercity</RootNamespace>
-    <AssemblyName>Univercity</AssemblyName>
+    <RootNamespace>MVCDB</RootNamespace>
+    <AssemblyName>MVCDB</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -128,15 +128,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Models\Univercity.Context.tt">
+    <Content Include="Models\Uni.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Univercity.Context.cs</LastGenOutput>
-      <DependentUpon>Univercity.edmx</DependentUpon>
+      <LastGenOutput>Uni.Context.cs</LastGenOutput>
+      <DependentUpon>Uni.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\Univercity.tt">
+    <Content Include="Models\Uni.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Univercity.edmx</DependentUpon>
-      <LastGenOutput>Univercity.cs</LastGenOutput>
+      <DependentUpon>Uni.edmx</DependentUpon>
+      <LastGenOutput>Uni.cs</LastGenOutput>
     </Content>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -148,182 +148,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\tbl_adminstrator.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
+    <Compile Include="Models\ModelClass\Student.cs" />
+    <Compile Include="Models\TblStudent.cs">
+      <DependentUpon>Uni.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\tbl_group_lesson.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_manager_group.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_project.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_project_member.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_project_report.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_record_professional.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_city.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_grade.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_group_lesson.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_level_access.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_month.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_national.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_occupation.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_quotas.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_religion_din.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_religion_mazhab.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_sex.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_state.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_student_extended_project.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_activity_teacher.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_conference.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_cooperation.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_member.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_reference_teacher.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_research.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_show_type_subject_project.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_accept_manager_group_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_accept_partner_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_accept_supervisor_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_account_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_duty_system_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_employment_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_final_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_marrid_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_occupation_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_select_project_student_show.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_status_student.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_student_graduated.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_student_personal_information.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_subject_proposed.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_supervisor.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_article_research.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_honor.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_information_spouse.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_invention.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_period_language_computer.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_presonal_information.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_quotas.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_record_edu.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_record_edu_academic.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_record_employment.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_record_professional.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\tbl_teacher_reference.cs">
-      <DependentUpon>Univercity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Univercity.Context.cs">
+    <Compile Include="Models\Uni.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Univercity.Context.tt</DependentUpon>
+      <DependentUpon>Uni.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Univercity.cs">
+    <Compile Include="Models\Uni.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Univercity.tt</DependentUpon>
+      <DependentUpon>Uni.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Univercity.Designer.cs">
+    <Compile Include="Models\Uni.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Univercity.edmx</DependentUpon>
+      <DependentUpon>Uni.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -333,13 +175,18 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\Univercity.edmx">
+    <Content Include="Views\Home\Index.cshtml" />
+    <EntityDeploy Include="Models\Uni.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Univercity.Designer.cs</LastGenOutput>
+      <LastGenOutput>Uni.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Univercity.edmx.diagram">
-      <DependentUpon>Univercity.edmx</DependentUpon>
+    <Content Include="Models\Uni.edmx.diagram">
+      <DependentUpon>Uni.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\Home\Insert.cshtml" />
+    <Content Include="Views\Home\ShowStudent.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
+    <Content Include="Views\_Partial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -349,9 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Repository\" />
-    <Folder Include="Views\Default\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -369,9 +213,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24115</DevelopmentServerPort>
+          <DevelopmentServerPort>31927</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:24115/</IISUrl>
+          <IISUrl>http://localhost:31927/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

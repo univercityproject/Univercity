@@ -1,0 +1,58 @@
+﻿@model MVCDB.Studnet
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+</head>
+<body>
+    <div> 
+
+        <h1> Index</h1>     
+        <br />
+        <h2>
+            @TempData["time"]
+        </h2>
+
+        @Session["idstdent"] 
+
+        @Html.ActionLink("صفحه دوم","show")
+
+        <form method="post" action="Getname">
+            Name:
+            @*<input type="text" name="Studnet.Name"  />*@
+            @*@Html.TextBox("Name",null,new{ @style="color:red"})*@
+            @Html.TextBoxFor(c=> c.Namestu)
+            <br />
+            Family:
+            @*<input type="text" name="Studnet.Family" />*@
+            @*@Html.TextBox("Family", null, new { @style = "color:blue" })*@
+          EditFor:
+              @Html.EditorFor(c=> c.General)
+
+            <br />
+            textbox:
+            @Html.TextBoxFor(c => c.General)
+
+            <br />
+            @Html.LabelFor(c=> c.Namestu)
+            <br /> 
+            <input type="submit" value="ثبت" />
+        </form>
+     
+
+
+
+    </div>
+
+
+
+</body>
+</html>
