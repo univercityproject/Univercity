@@ -148,7 +148,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Repository\Class1.cs" />
+    <Compile Include="Models\Repository\Student.cs" />
     <Compile Include="Models\tbl_adminstrator.cs">
       <DependentUpon>Univercity.tt</DependentUpon>
     </Compile>

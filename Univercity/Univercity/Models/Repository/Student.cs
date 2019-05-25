@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Univercity.Models.Repository
 {
-    public class Class1
+    public class Student
     {
     }
 }
