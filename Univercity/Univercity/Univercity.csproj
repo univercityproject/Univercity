@@ -148,7 +148,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Repository\Student.cs" />
     <Compile Include="Models\tbl_adminstrator.cs">
       <DependentUpon>Univercity.tt</DependentUpon>
     </Compile>
@@ -350,6 +349,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Repository\" />
     <Folder Include="Views\Default\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>
