@@ -148,6 +148,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Repository\Student\ICity.cs" />
+    <Compile Include="Models\Repository\Student\CityRepository.cs" />
     <Compile Include="Models\tbl_adminstrator.cs">
       <DependentUpon>Univercity.tt</DependentUpon>
     </Compile>
@@ -340,6 +342,9 @@
     <Content Include="Models\Univercity.edmx.diagram">
       <DependentUpon>Univercity.edmx</DependentUpon>
     </Content>
+    <Content Include="Views\Home\Print.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\FormInsert.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -349,9 +354,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Repository\" />
+    <Folder Include="Models\Repository\Teacher\" />
     <Folder Include="Views\Default\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
