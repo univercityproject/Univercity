@@ -145,11 +145,14 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Repository\Student\ICity.cs" />
     <Compile Include="Models\Repository\Student\CityRepository.cs" />
+    <Compile Include="Models\Repository\Teacher\Iteacher_p_i.cs" />
+    <Compile Include="Models\Repository\Teacher\Teacher_p_i_Ripository.cs" />
     <Compile Include="Models\tbl_adminstrator.cs">
       <DependentUpon>Univercity.tt</DependentUpon>
     </Compile>
@@ -345,6 +348,7 @@
     <Content Include="Views\Home\Print.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\FormInsert.cshtml" />
+    <Content Include="Views\Teacher\formInsert.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -354,7 +358,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Repository\Teacher\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
